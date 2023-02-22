@@ -1,5 +1,6 @@
 # Prop retriever
-Sometimes during local development you just need values that either renewed often or very dynamic, so instead of going into Firebase UI and copy pasting stuff manually, the script retrieves them and spits out into `stdout`.
+Sometimes during local development you just need values that either often renewed or very dynamic, so instead of going into Firebase UI and copy pasting stuff manually, the script retrieves them and spits out into `stdout`.
+This script automatically puts stuff from Firebase into your buffer. Once used, go ahead and paste it anywhere you need.
 
 ## Setup
 
@@ -23,7 +24,3 @@ FIREBASE_URL="https://<FIREBASE_URL>.firebasedatabase.app"
 FIREBASE_VALUE_PATH="users/oleggulevskyygmailcom/accessToken"
 ```
 
-For example, you can get your values into buffer like so
-```
-npm run start | pbcopy
-```
