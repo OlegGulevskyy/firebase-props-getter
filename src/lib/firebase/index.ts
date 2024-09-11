@@ -1,9 +1,9 @@
 import firebase from 'firebase-admin';
+import { applicationDefault } from 'firebase-admin/app';
 
-const CREDS_PATH = process.env.CREDS_PATH;
-const FIREBASE_URL = process.env.FIREBASE_URL;
+const FIREBASE_URL = process.env.FIREBASE_URL_PROD;
 
 export const firebaseApp = firebase.initializeApp({
-  credential: firebase.credential.cert(CREDS_PATH),
+  credential: applicationDefault(),
   databaseURL: FIREBASE_URL,
 });

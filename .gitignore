@@ -30,6 +30,9 @@ build/
 
 # Firebase credentials
 creds.json
+dev-creds.json
+staging-creds.json
+prod-creds.json
 
 # Any environment settings
 .env
