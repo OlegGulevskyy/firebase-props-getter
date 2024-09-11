@@ -29,7 +29,6 @@ const run = async () => {
   await writeToFile(val);
   console.log('Value written to file.');
   process.exit(0);
-  //writeToOutput(val);
 };
 
 await run();
